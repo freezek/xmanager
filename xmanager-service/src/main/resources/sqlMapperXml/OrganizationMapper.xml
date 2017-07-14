@@ -3,8 +3,8 @@
 <mapper namespace="com.ikm.xmanager.cms.mapper.OrganizationMapper">
 
     <!-- 通用查询结果列-->
-    <sql id="Base_Column_List">
-        id, name, address, code, icon, pid, seq, create_time AS createTime
-    </sql>
+    <!--<sql id="Base_Column_List">-->
+        <!--id, name, address, code, icon, pid, seq, create_time AS createTime-->
+    <!--</sql>-->
 
 </mapper>

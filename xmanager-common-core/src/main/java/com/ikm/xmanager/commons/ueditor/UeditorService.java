@@ -10,9 +10,11 @@ import com.ikm.xmanager.commons.ueditor.upload.Uploader;
 import com.ikm.xmanager.commons.utils.JsonUtils;
 import com.ikm.xmanager.commons.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
+@Component
 public class UeditorService {
 	@Autowired 
 	private UeditorManager ueditorManager;

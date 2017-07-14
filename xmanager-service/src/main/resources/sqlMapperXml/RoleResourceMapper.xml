@@ -3,8 +3,8 @@
 <mapper namespace="com.ikm.xmanager.cms.mapper.RoleResourceMapper">
 
     <!-- 通用查询结果列-->
-    <sql id="Base_Column_List">
-        id, role_id AS roleId, resource_id AS resourceId
-    </sql>
+    <!--<sql id="Base_Column_List">-->
+        <!--id, role_id AS roleId, resource_id AS resourceId-->
+    <!--</sql>-->
 
 </mapper>

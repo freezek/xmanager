@@ -60,7 +60,7 @@
     <!-- MyBatis 动态实现  -->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 对Dao 接口动态实现，需要知道接口在哪  -->
-        <property name="basePackage" value="com.ikm.mapper"/>
+        <property name="basePackage" value="com.ikm.xmanager.cms.mapper"/>
     </bean>
 
     <!-- 事务管理 -->

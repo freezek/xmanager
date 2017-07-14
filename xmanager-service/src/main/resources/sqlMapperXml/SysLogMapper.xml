@@ -3,8 +3,8 @@
 <mapper namespace="com.ikm.xmanager.cms.mapper.SysLogMapper">
 
     <!-- 通用查询结果列-->
-    <sql id="Base_Column_List">
-        id, login_name AS loginName, role_name AS roleName, opt_content AS optContent, client_ip AS clientIp, create_time AS createTime
-    </sql>
+    <!--<sql id="Base_Column_List">-->
+        <!--id, login_name AS loginName, role_name AS roleName, opt_content AS optContent, client_ip AS clientIp, create_time AS createTime-->
+    <!--</sql>-->
 
 </mapper>

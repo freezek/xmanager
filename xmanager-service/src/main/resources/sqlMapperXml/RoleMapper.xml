@@ -3,9 +3,9 @@
 <mapper namespace="com.ikm.xmanager.cms.mapper.RoleMapper">
 
     <!-- 通用查询结果列-->
-    <sql id="Base_Column_List">
-        id, name, seq, description, status
-    </sql>
+    <!--<sql id="Base_Column_List">-->
+        <!--id, name, seq, description, status-->
+    <!--</sql>-->
 
     <select id="selectResourceIdListByRoleId" resultType="java.lang.Long" parameterType="java.lang.Long">
         SELECT

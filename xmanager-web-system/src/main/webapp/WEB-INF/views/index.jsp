@@ -193,8 +193,8 @@
         <div data-options="region:'north',border:false" style="overflow: hidden;">
             <div>
                 <span style="float: right; padding-right: 20px; margin-top: 15px; color: #333">
-                    <i class="fi-torso"></i>
-                    <b><shiro:principal></shiro:principal></b>&nbsp;&nbsp; 
+                     <a href="javascript:void(0)"  class="easyui-linkbutton" plain="true" icon="fi-torso-business"><b><shiro:principal></shiro:principal></b>&nbsp;&nbsp; </a>
+
                     <shiro:hasPermission name="/user/editPwdPage">
                         <a href="javascript:void(0)" onclick="editUserPwd()" class="easyui-linkbutton" plain="true" icon="fi-unlock" >修改密码</a>
                     </shiro:hasPermission>&nbsp;&nbsp;
@@ -211,19 +211,10 @@
         <div data-options="region:'center'" style="overflow: hidden;">
             <div id="index_tabs" style="overflow: hidden;">
                 <div title="首页" data-options="iconCls:'fi-home',border:false" style="overflow: hidden;">
-                    <script src='https://git.oschina.net/wangzhixuan/spring-shiro-training/widget_preview'></script>
-                    <style>
-                        .pro_name a{color: #4183c4;}
-                        .osc_git_title{background-color: #d8e5f1;}
-                        .osc_git_box{background-color: #fafafa;}
-                        .osc_git_box{border-color: #ddd;}
-                        .osc_git_info{color: #666;}
-                        .osc_git_main a{color: #4183c4;}
-                    </style>
                 </div>
             </div>
         </div>
-        <div data-options="region:'south',border:false" style="height: 30px;line-height:30px; overflow: hidden;text-align: center;background-color: #eee" >Copyright © 2015 power by <a href="http://www.dreamlu.net/" target="_blank">如梦技术</a></div>
+        <div data-options="region:'south',border:false" style="height: 30px;line-height:30px; overflow: hidden;text-align: center;background-color: #eee" >Copyright © 2017 power by <a href="http://www.aikaimen.com/" target="_blank">昆明爱开门网络科技有限公司</a></div>
     </div>
     <div id="tabsMenu">
         <div data-options="iconCls:'fi-loop'" type="refresh" style="font-size: 12px;">刷新</div>

@@ -12,7 +12,7 @@ h2 {font-size:18px;font-weight:bold;margin:0;margin-bottom:15px;}
 #layout_west_tree li div{padding:5px 5px 3px 10px;}
 
 #header{overflow:hidden;height:50px;background:#fff ;line-height:50px;color:#fff;font-family:Verdana,微软雅黑,黑体}
-.header{background: url(../images/logo.png) no-repeat left; width: 285px; height: 50px; float: left;}
+.header{background: url(../images/logo.jpg) no-repeat left; margin-left: 20px;width: 285px; height: 50px; float: left;}
 #common_b{overflow:hidden;height:70px;line-height:70px;color:#fff;font-family:Verdana,微软雅黑,黑体}
 #common{overflow:hidden;height:60px;background:#eee;line-height:60px;color:#fff;font-family:Verdana,微软雅黑,黑体}
 

@@ -23,12 +23,13 @@
     <aop:aspectj-autoproxy expose-proxy="true" proxy-target-class="true"/>
     <context:annotation-config/>
     <!-- 扫描service -->
-    <context:component-scan base-package="com.ikm.xmanager.cms.service"/>
+    <context:component-scan base-package="com.ikm.xmanager"/>
 
-    <import resource="classpath:spring/spring-mybatis.xml"/>
+    <!--<import resource="classpath:spring/spring-mybatis.xml"/>-->
     <!--<import resource="classpath:spring/spring-ehcache.xml"/>-->
-    <import resource="classpath:spring/spring-redis.xml"/>
+    <!--<import resource="classpath:spring/spring-redis.xml"/>-->
     <!-- Spring 异步event需要开启task -->
-    <import resource="classpath:spring/spring-task.xml"/>
-    <import resource="classpath:spring/spring-shiro.xml"/>
+    <!--<import resource="classpath:spring/spring-task.xml"/>-->
+    <!--<import resource="classpath:spring/spring-shiro.xml"/>-->
+    <import resource="classpath:spring-config-service.xml"/>
 </beans>

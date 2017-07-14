@@ -7,6 +7,7 @@ import com.ikm.xmanager.commons.utils.Charsets;
 import com.ikm.xmanager.commons.utils.IOUtils;
 import com.ikm.xmanager.commons.utils.JsonUtils;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
 import java.io.InputStream;
@@ -17,6 +18,7 @@ import java.io.InputStream;
  * @author L.cm
  *
  */
+@Component
 public class UeditorManager implements InitializingBean {
 	private static final String CONFIG_FILE_JSON = "/ueditor.config.json";
 	private UeditorConfig jsonConfig = null;

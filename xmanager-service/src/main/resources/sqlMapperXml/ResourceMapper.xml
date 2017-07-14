@@ -3,8 +3,8 @@
 <mapper namespace="com.ikm.xmanager.cms.mapper.ResourceMapper">
 
     <!-- 通用查询结果列-->
-    <sql id="Base_Column_List">
-        id, name, url, description, icon, pid, seq, status, open_mode as openMode, opened, resource_type AS resourceType, create_time AS createTime
-    </sql>
+    <!--<sql id="Base_Column_List">-->
+        <!--id, name, url, description, icon, pid, seq, status, open_mode as openMode, opened, resource_type AS resourceType, create_time AS createTime-->
+    <!--</sql>-->
 
 </mapper>

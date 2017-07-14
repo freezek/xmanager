@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
-    <display-name>spring-shiro-training</display-name>
+    <display-name>spring-bak-shiro-training</display-name>
 
     <!-- 继承主配置文件 -->
     <context-param>
