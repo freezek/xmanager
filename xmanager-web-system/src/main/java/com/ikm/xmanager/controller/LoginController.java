@@ -3,10 +3,10 @@ package com.ikm.xmanager.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.ikm.xmanager.commons.base.BaseController;
 import com.ikm.xmanager.commons.csrf.CsrfToken;
-import com.ikm.xmanager.commons.shiro.captcha.DreamCaptcha;
 import com.ikm.xmanager.commons.utils.StringUtils;
+import com.ikm.xmanager.controller.base.BaseController;
+import com.ikm.xmanager.permission.shiro.captcha.DreamCaptcha;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.DisabledAccountException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -98,6 +98,7 @@ public class LoginController extends BaseController {
         // 设置记住密码
         token.setRememberMe(1 == rememberMe);
         try {
+            System.out.println(user);
             user.login(token);
             return renderSuccess();
         } catch (UnknownAccountException e) {

@@ -71,6 +71,7 @@ public class CsrfInterceptor extends HandlerInterceptorAdapter {
 	/**
 	 * 用于清理@CsrfToken保证只能请求成功一次
 	 */
+
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {

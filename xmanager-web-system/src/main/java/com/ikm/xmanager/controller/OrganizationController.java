@@ -6,7 +6,7 @@ import javax.validation.Valid;
 
 import com.ikm.xmanager.cms.model.Organization;
 import com.ikm.xmanager.cms.service.IOrganizationService;
-import com.ikm.xmanager.commons.base.BaseController;
+import com.ikm.xmanager.controller.base.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -2,7 +2,7 @@ package com.ikm.xmanager.controller;
 
 import java.io.File;
 
-import com.ikm.xmanager.commons.base.BaseController;
+import com.ikm.xmanager.controller.base.BaseController;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;

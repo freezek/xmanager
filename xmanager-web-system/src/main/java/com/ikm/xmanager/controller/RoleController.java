@@ -6,8 +6,8 @@ import javax.validation.Valid;
 
 import com.ikm.xmanager.cms.model.Role;
 import com.ikm.xmanager.cms.service.IRoleService;
-import com.ikm.xmanager.commons.base.BaseController;
 import com.ikm.xmanager.commons.result.PageInfo;
+import com.ikm.xmanager.controller.base.BaseController;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

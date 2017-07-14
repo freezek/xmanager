@@ -26,10 +26,10 @@
         <!-- cache INFO -->
         <logger name="net.sf.ehcache" level="INFO"/>
         <logger name="org.springframework.cache" level="INFO"/>
-        <logger name="com.wangzhixuan.commons.shiro.cache" level="INFO"/>
+        <logger name="com.ikm.xmanager.permission.shiro.cache" level="INFO"/>
         
         <!-- 业务debug日志 -->
-        <logger name="com.wangzhixuan" level="DEBUG"/>
+        <logger name="com.ikm" level="DEBUG"/>
         
         <Root level="debug">
             <AppenderRef ref="Console" />

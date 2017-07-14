@@ -12,9 +12,6 @@
     <module>xmanager-service</module>
     <module>xmanager-web-system</module>
     <module>xmanager-web-main</module>
-      <module>xmanager-web-system</module>
-    <module>xmanager-web-system</module>
-    <module>xmanager-web-main</module>
   </modules>
   <name>xmanager Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -187,6 +184,7 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-test</artifactId>
+        <version>${spring.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>

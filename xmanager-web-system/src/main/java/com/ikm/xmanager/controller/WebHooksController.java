@@ -5,10 +5,10 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import com.ikm.xmanager.cms.event.WebHooksEvent;
-import com.ikm.xmanager.commons.base.BaseController;
 import com.ikm.xmanager.commons.scan.SpringUtils;
 import com.ikm.xmanager.commons.utils.JsonUtils;
 import com.ikm.xmanager.commons.utils.StringUtils;
+import com.ikm.xmanager.controller.base.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -24,7 +24,7 @@ public class WebHooksController extends BaseController {
     /**
      * git@osc WebHooks 设置
      * WIKI: http://git.oschina.net/oschina/git-osc/wikis/WebHook-%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B
-     * @param hook json字符串
+     * @param request json字符串
      * @return jsonBean
      */
     @PostMapping("webhooks")

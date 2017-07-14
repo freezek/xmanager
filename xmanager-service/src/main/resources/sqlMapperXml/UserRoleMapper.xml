@@ -3,9 +3,9 @@
 <mapper namespace="com.ikm.xmanager.cms.mapper.UserRoleMapper">
 
     <!-- 通用查询结果列-->
-    <sql id="Base_Column_List">
-        id, user_id AS userId, role_id AS roleId
-    </sql>
+    <!--<sql id="Base_Column_List">-->
+        <!--id, user_id AS userId, role_id AS roleId-->
+    <!--</sql>-->
 
     <select id="selectByUserId" resultType="UserRole" parameterType="java.lang.Long">
         select

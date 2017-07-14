@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.wangzhixuan.mapper.UserMapper">
+<mapper namespace="com.ikm.xmanager.cms.mapper.UserMapper">
 
-    <resultMap id="userVoResultMap" type="com.wangzhixuan.model.vo.UserVo">
+    <resultMap id="userVoResultMap" type="com.ikm.xmanager.cms.model.vo.UserVo">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <result column="login_name" property="loginName" jdbcType="VARCHAR"/>
         <result column="name" property="name" jdbcType="VARCHAR"/>
@@ -24,9 +24,9 @@
     </resultMap>
 
     <!-- 通用查询结果列-->
-    <sql id="Base_Column_List">
-        id, login_name AS loginName, name, password, salt, sex, age, phone, user_type AS userType, status, organization_id AS organizationId, create_time AS createTime
-    </sql>
+    <!--<sql id="Base_Column_List">-->
+        <!--id, login_name AS loginName, name, password, salt, sex, age, phone, user_type AS userType, status, organization_id AS organizationId, create_time AS createTime-->
+    <!--</sql>-->
 
     <select id="selectUserVoById" resultMap="userVoResultMap" parameterType="java.lang.Long">
         SELECT

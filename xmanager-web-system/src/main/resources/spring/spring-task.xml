@@ -11,7 +11,7 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 扫描 event包 -->
-    <context:component-scan base-package="com.wangzhixuan.event;com.wangzhixuan.task"/>
+    <context:component-scan base-package="com.ikm.xmanager.cms.event;com.ikm.xmanager.cms.task"/>
 
     <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
         <!-- 核心线程数 -->

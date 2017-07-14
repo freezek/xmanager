@@ -38,7 +38,7 @@
         <!-- 自动扫描Mapping.xml文件 -->
         <property name="mapperLocations" value="classpath*:/sqlMapperXml/*.xml"></property>
         <property name="configLocation" value="classpath:xml/mybatis-config.xml"></property>
-        <property name="typeAliasesPackage" value="com.wangzhixuan.model"/>
+        <property name="typeAliasesPackage" value="com.ikm.xmanager.cms.model"/>
         <property name="globalConfig" ref="globalConfig"/>
         <property name="plugins">
             <array>
@@ -60,7 +60,7 @@
     <!-- MyBatis 动态实现  -->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 对Dao 接口动态实现，需要知道接口在哪  -->
-        <property name="basePackage" value="com.wangzhixuan.mapper"/>
+        <property name="basePackage" value="com.ikm.xmanager.cms.mapper"/>
     </bean>
 
     <!-- 事务管理 -->
@@ -82,6 +82,6 @@
 
     <!-- 配置切面 -->
     <aop:config expose-proxy="true" proxy-target-class="true">
-        <aop:advisor advice-ref="transactionAdvice" pointcut="execution(* com.wangzhixuan.service..*.*(..))"/>
+        <aop:advisor advice-ref="transactionAdvice" pointcut="execution(* com.ikm.xmanager.cms.service..*.*(..))"/>
     </aop:config>
 </beans>

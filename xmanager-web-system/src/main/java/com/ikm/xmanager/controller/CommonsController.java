@@ -1,8 +1,8 @@
 package com.ikm.xmanager.controller;
 
 
-import com.ikm.xmanager.commons.shiro.captcha.DreamCaptcha;
 import com.ikm.xmanager.commons.ueditor.UeditorService;
+import com.ikm.xmanager.permission.shiro.captcha.DreamCaptcha;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

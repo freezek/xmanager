@@ -7,7 +7,7 @@
 
     <description>Shiro安全配置</description>
 
-    <bean class="com.wangzhixuan.commons.shiro.captcha.DreamCaptcha">
+    <bean class="com.ikm.xmanager.permission.shiro.captcha.DreamCaptcha">
         <property name="cacheManager" ref="shiroSpringCacheManager"/>
         <!-- 复用半小时缓存 -->
         <property name="cacheName" value="halfHour"/>
@@ -25,7 +25,7 @@
     </bean>
 
     <!-- 項目自定义的Realm -->
-    <bean id="shiroDbRealm" class="com.wangzhixuan.commons.shiro.ShiroDbRealm">
+    <bean id="shiroDbRealm" class="com.ikm.xmanager.permission.shiro.ShiroDbRealm">
         <constructor-arg index="0" name="cacheManager" ref="shiroSpringCacheManager"/>
         <constructor-arg index="1" name="matcher" ref="credentialsMatcher"/>
         <!-- 启用身份验证缓存，即缓存AuthenticationInfo信息，默认false -->
@@ -82,13 +82,13 @@
         </property>
     </bean>
     <!-- ajax session超时时处理 -->
-    <bean id="ajaxSessionFilter" class="com.wangzhixuan.commons.shiro.ShiroAjaxSessionFilter"/>
+    <bean id="ajaxSessionFilter" class="com.ikm.xmanager.permission.shiro.ShiroAjaxSessionFilter"/>
 
-    <!-- 用户授权信息Cache, 采用spring-cache, 具体请查看spring-ehcache.xml、spring-redis.xml -->
-    <bean id="shiroSpringCacheManager" class="com.wangzhixuan.commons.shiro.cache.ShiroSpringCacheManager">
+    <!-- 用户授权信息Cache, 采用spring-cache, 具体请查看spring-ehcache.spring-redis-service.xml.xml -->
+    <bean id="shiroSpringCacheManager" class="com.ikm.xmanager.permission.shiro.cache.ShiroSpringCacheManager">
         <property name="cacheManager" ref="cacheManager"/>
     </bean>
-    
+
     <!-- 会话管理器 -->
     <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
         <!-- 设置全局会话超时时间 半小时 -->
@@ -112,14 +112,14 @@
     </bean>
     
     <!-- shiro密码加密配置 -->
-    <bean id="passwordHash" class="com.wangzhixuan.commons.shiro.PasswordHash">
+    <bean id="passwordHash" class="com.ikm.xmanager.permission.shiro.PasswordHash">
         <!-- 密码加密 1次md5,增强密码可修改此处 -->
         <property name="algorithmName" value="md5"/>
         <property name="hashIterations" value="1"/>
     </bean>
     
     <!-- 密码错误5次锁定半小时 -->
-    <bean id="credentialsMatcher" class="com.wangzhixuan.commons.shiro.RetryLimitCredentialsMatcher">
+    <bean id="credentialsMatcher" class="com.ikm.xmanager.permission.shiro.RetryLimitCredentialsMatcher">
         <constructor-arg ref="shiroSpringCacheManager"/>
         <property name="retryLimitCacheName" value="halfHour"/>
         <property name="passwordHash" ref="passwordHash"/>

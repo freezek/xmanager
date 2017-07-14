@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.wangzhixuan.mapper.RoleMapper">
+<mapper namespace="com.ikm.xmanager.cms.mapper.RoleMapper">
 
     <!-- 通用查询结果列-->
-    <sql id="Base_Column_List">
-        id, name, seq, description, status
-    </sql>
+    <!--<sql id="Base_Column_List">-->
+        <!--id, name, seq, description, status-->
+    <!--</sql>-->
 
     <select id="selectResourceIdListByRoleId" resultType="java.lang.Long" parameterType="java.lang.Long">
         SELECT

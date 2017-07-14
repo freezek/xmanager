@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ikm</groupId>
     <artifactId>xmanager-service</artifactId>
+    <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>com.ikm</groupId>
@@ -57,6 +58,42 @@
             <artifactId>spring-jdbc</artifactId>
             <version>4.3.8.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- ehcache和redis必选其一，也可同时使用（需要注意） -->
+        <!--<dependency>-->
+            <!--<groupId>net.sf.ehcache</groupId>-->
+            <!--<artifactId>ehcache-core</artifactId>-->
+            <!--<version>${ehcache.version}</version>-->
+        <!--</dependency>-->
+        <!-- redis  -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>1.8.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+        <!-- hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
+        </dependency>
+
+
     </dependencies>
 
     <!-- 打包插件 -->
