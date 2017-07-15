@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>用户登录-如梦技术IT-专业的java学习培训平台</title>
+    <title>用户登录-Xmanager-昆明爱开门网络科技有限公司</title>
     <meta name="keywords" content="昆明爱开门网络科技,spring-bak,mybatis,spring-bak-boot,docker">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
