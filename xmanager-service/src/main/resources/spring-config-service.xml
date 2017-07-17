@@ -32,5 +32,5 @@
 
     <!-- Spring 异步event需要开启task -->
     <import resource="classpath:spring/spring-task-service.xml"/>
-    <import resource="classpath:spring/spring-shiro-service.xml"/>
+    <!--<import resource="classpath:spring/spring-shiro-service.xml"/>-->
 </beans>

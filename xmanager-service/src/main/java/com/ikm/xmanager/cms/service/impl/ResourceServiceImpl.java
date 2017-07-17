@@ -7,9 +7,9 @@ import com.ikm.xmanager.cms.mapper.RoleMapper;
 import com.ikm.xmanager.cms.mapper.RoleResourceMapper;
 import com.ikm.xmanager.cms.mapper.UserRoleMapper;
 import com.ikm.xmanager.cms.model.Resource;
+import com.ikm.xmanager.cms.model.ShiroUser;
 import com.ikm.xmanager.cms.service.IResourceService;
 import com.ikm.xmanager.commons.result.Tree;
-import com.ikm.xmanager.permission.shiro.ShiroUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

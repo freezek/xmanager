@@ -2,8 +2,8 @@ package com.ikm.xmanager.cms.service;
 
 import com.baomidou.mybatisplus.service.IService;
 import com.ikm.xmanager.cms.model.Resource;
+import com.ikm.xmanager.cms.model.ShiroUser;
 import com.ikm.xmanager.commons.result.Tree;
-import com.ikm.xmanager.permission.shiro.ShiroUser;
 
 import java.util.List;
 

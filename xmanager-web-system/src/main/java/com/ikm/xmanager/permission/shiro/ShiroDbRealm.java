@@ -1,5 +1,6 @@
 package com.ikm.xmanager.permission.shiro;
 
+import com.ikm.xmanager.cms.model.ShiroUser;
 import com.ikm.xmanager.cms.model.User;
 import com.ikm.xmanager.cms.model.vo.UserVo;
 import com.ikm.xmanager.cms.service.IRoleService;

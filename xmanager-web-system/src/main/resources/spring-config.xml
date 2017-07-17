@@ -30,6 +30,6 @@
     <!--<import resource="classpath:spring/spring-redis.xml"/>-->
     <!-- Spring 异步event需要开启task -->
     <!--<import resource="classpath:spring/spring-task.xml"/>-->
-    <!--<import resource="classpath:spring/spring-shiro.xml"/>-->
+    <import resource="classpath:spring/spring-shiro.xml"/>
     <import resource="classpath:spring-config-service.xml"/>
 </beans>

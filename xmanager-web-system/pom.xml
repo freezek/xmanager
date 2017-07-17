@@ -65,6 +65,11 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.3.2</version>
+        </dependency>
         <!-- poi provided 不强制依赖 -->
         <dependency>
             <groupId>org.apache.poi</groupId>

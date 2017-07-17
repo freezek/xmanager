@@ -1,13 +1,12 @@
 package com.ikm.xmanager.controller.base;
 
 import com.baomidou.mybatisplus.plugins.Page;
+import com.ikm.xmanager.cms.model.ShiroUser;
 import com.ikm.xmanager.commons.result.PageInfo;
 import com.ikm.xmanager.commons.result.Result;
 import com.ikm.xmanager.commons.utils.Charsets;
 import com.ikm.xmanager.commons.utils.StringEscapeEditor;
 import com.ikm.xmanager.commons.utils.URLUtils;
-import com.ikm.xmanager.permission.shiro.ShiroUser;
-import org.apache.ibatis.session.RowBounds;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.shiro.SecurityUtils;

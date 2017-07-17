@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.ikm.xmanager.permission.shiro;
+package com.ikm.xmanager.cms.model;
 
 import java.io.Serializable;
 import java.util.Set;
