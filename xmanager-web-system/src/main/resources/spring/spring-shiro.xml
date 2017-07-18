@@ -65,14 +65,14 @@
                 <!--
                     anon  不需要认证
                     authc 需要认证
-                    user  验证通过或RememberMe登录的都可以
+                    user  验证通过或RememberMe登录的都可以git
                 -->
                 /captcha.jpg = anon
                 /commons/** = anon
                 /static/** = anon
                 /webhooks = anon
                 /login = anon
-                /** = user
+                /** = authc
             </value>
         </property>
         <property name="filters">
