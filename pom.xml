@@ -12,6 +12,7 @@
     <module>xmanager-service</module>
     <module>xmanager-web-system</module>
     <module>xmanager-web-main</module>
+      <module>xmanager-permission</module>
   </modules>
   <name>xmanager Maven Webapp</name>
   <url>http://maven.apache.org</url>

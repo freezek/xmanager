@@ -1,40 +1,26 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>xmanager</artifactId>
         <groupId>com.ikm</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.ikm</groupId>
-    <artifactId>xmanager-web-system</artifactId>
-    <packaging>war</packaging>
-    <name>xmanager-web-system Maven Webapp</name>
-    <url>http://maven.apache.org</url>
+
+    <artifactId>xmanager-permission</artifactId>
     <dependencies>
+        <dependency>
+            <groupId>com.ikm</groupId>
+            <artifactId>xmanager-common-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>com.ikm</groupId>
             <artifactId>xmanager-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.ikm</groupId>
-            <artifactId>xmanager-permission</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
-            <version>${mybaitsplus.version}</version>
-        </dependency>
-
         <!-- log4j2 begin -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -52,12 +38,6 @@
             <version>${log4j2.version}</version>
         </dependency>
         <!-- log4j2 end -->
-        <!-- hibernate-validator -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>${hibernate-validator.version}</version>
-        </dependency>
         <!--spring-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -75,48 +55,11 @@
             <artifactId>shiro-core</artifactId>
             <version>1.3.2</version>
         </dependency>
-        <!-- poi provided 不强制依赖 -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>${poi.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <!-- web begin -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>${servlet.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jsp-api</artifactId>
-            <version>2.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
-            <version>3.0.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>javax.el</artifactId>
-            <version>3.0.0</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- web end -->
     </dependencies>
+
     <!-- 打包插件 -->
     <build>
-        <finalName>xmanager-web-system</finalName>
+        <finalName>xmanager-permission</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -160,4 +103,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

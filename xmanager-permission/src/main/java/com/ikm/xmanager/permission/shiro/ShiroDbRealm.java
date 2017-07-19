@@ -63,7 +63,7 @@ public class ShiroDbRealm extends AuthorizingRealm {
         ShiroUser shiroUser = new ShiroUser(user.getId(), user.getLoginName(), user.getName(), urls);
         shiroUser.setRoles(roles);
         // 认证缓存信息
-        return new SimpleAuthenticationInfo(shiroUser, user.getPassword().toCharArray(), 
+        return new SimpleAuthenticationInfo(shiroUser, user.getPassword().toCharArray(),
                 ShiroByteSource.of(user.getSalt()), getName());
     }
 
