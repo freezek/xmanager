@@ -8,7 +8,7 @@
 
  项目简介：
 
- 本项目主要基于开源项目的二次开发：http://git.oschina.net/wangzhixuan/spring-shiro-training 一个基于Shiro简单易用的权限管理系统
+ 本项目SSM部分代码主要使用了开源项目：http://git.oschina.net/wangzhixuan/spring-shiro-training 一个基于Shiro简单易用的权限管理系统
 
  主要用到的技术栈：
 
