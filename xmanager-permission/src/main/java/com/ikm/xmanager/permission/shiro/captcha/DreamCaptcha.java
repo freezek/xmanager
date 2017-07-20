@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.shiro.cache.Cache;
 import org.apache.shiro.cache.CacheManager;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
 import javax.servlet.http.HttpServletRequest;

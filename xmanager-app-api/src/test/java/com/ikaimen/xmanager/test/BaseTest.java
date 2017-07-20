@@ -1,4 +1,4 @@
-package com.ikm.test.base;
+package com.ikaimen.xmanager.test;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -16,14 +16,15 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
+
 /**
  * 通用测试类
  * @author L.cm
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
-		"classpath:spring-mvc.xml",
-		"classpath:spring-config.xml"
+		"classpath:spring-mvc-app.xml",
+		"classpath:spring-config-app.xml"
 })
 @WebAppConfiguration
 public abstract class BaseTest {
@@ -31,8 +32,7 @@ public abstract class BaseTest {
 	protected MockHttpServletRequest request;
 	protected MockHttpServletResponse response;
 
-	@Autowired
-	protected WebApplicationContext wac;
+	@Autowired protected WebApplicationContext wac;
 
 	@Before
 	public void setUp() {
@@ -43,4 +43,6 @@ public abstract class BaseTest {
 		request.setCharacterEncoding("UTF-8");
 		response = new MockHttpServletResponse();
 	}
+
+
 }

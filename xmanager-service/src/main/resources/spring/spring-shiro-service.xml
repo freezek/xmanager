@@ -7,7 +7,7 @@
 
     <description>Shiro安全配置</description>
 
-    <bean class="com.ikm.xmanager.permission.shiro.captcha.DreamCaptcha">
+    <bean class=" com.ikm.xmanager.permission.shiro.captcha.DreamCaptcha">
         <property name="cacheManager" ref="shiroSpringCacheManager"/>
         <!-- 复用半小时缓存 -->
         <property name="cacheName" value="halfHour"/>

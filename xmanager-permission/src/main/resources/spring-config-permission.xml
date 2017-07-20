@@ -24,13 +24,6 @@
     <context:annotation-config/>
     <!-- 扫描service -->
     <context:component-scan base-package="com.ikm.xmanager"/>
-
-    <!--<import resource="classpath:spring/spring-mybatis.xml"/>-->
-    <!--<import resource="classpath:spring/spring-ehcache.xml"/>-->
-    <!--<import resource="classpath:spring/spring-redis.xml"/>-->
-    <!-- Spring 异步event需要开启task -->
-    <!--<import resource="classpath:spring/spring-task.xml"/>-->
-    <import resource="classpath:spring-config-service.xml"/>
-    <import resource="classpath:spring-config-permission.xml"/>
+    <import resource="classpath*:spring/spring-shiro-permission.xml"/>
 
 </beans>

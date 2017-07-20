@@ -14,7 +14,7 @@
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
-                <value>classpath:config/*.properties</value>
+                <value>classpath:conf/*.properties</value>
             </list>
         </property>
     </bean>
@@ -23,14 +23,7 @@
     <aop:aspectj-autoproxy expose-proxy="true" proxy-target-class="true"/>
     <context:annotation-config/>
     <!-- 扫描service -->
-    <context:component-scan base-package="com.ikm.xmanager"/>
+    <context:component-scan base-package="com.ikm.xmanager.jwt"/>
 
-    <!--<import resource="classpath:spring/spring-mybatis.xml"/>-->
-    <!--<import resource="classpath:spring/spring-ehcache.xml"/>-->
-    <!--<import resource="classpath:spring/spring-redis.xml"/>-->
-    <!-- Spring 异步event需要开启task -->
-    <!--<import resource="classpath:spring/spring-task.xml"/>-->
-    <import resource="classpath:spring-config-service.xml"/>
-    <import resource="classpath:spring-config-permission.xml"/>
 
 </beans>
