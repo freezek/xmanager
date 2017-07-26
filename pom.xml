@@ -19,6 +19,7 @@
     <module>xmanager-app-notify</module>
     <module>xmanager-app-nsdh</module>
     <module>xmanager-business-notify</module>
+    <module>xmanager-web-mains</module>
   </modules>
   <name>xmanager Maven Webapp</name>
   <url>http://maven.apache.org</url>
