@@ -81,11 +81,6 @@
             <artifactId>jjwt</artifactId>
             <version>RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>RELEASE</version>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework.mobile/spring-mobile-device -->
         <dependency>
