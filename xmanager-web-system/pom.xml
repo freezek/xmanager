@@ -113,6 +113,28 @@
             <scope>test</scope>
         </dependency>
         <!-- web end -->
+        <!-- https://mvnrepository.com/artifact/org.apereo.cas/cas-server-core-authentication -->
+        <!--<dependency>-->
+            <!--<groupId>org.apereo.cas</groupId>-->
+            <!--<artifactId>cas-server-core-authentication</artifactId>-->
+            <!--<version>5.1.2</version>-->
+        <!--</dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.jasig.cas/cas-server-webapp-support -->
+        <dependency>
+            <groupId>org.jasig.cas</groupId>
+            <artifactId>cas-server-webapp-support</artifactId>
+            <version>4.1.4</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.jasig.cas.client/cas-client-core -->
+        <dependency>
+            <groupId>org.jasig.cas.client</groupId>
+            <artifactId>cas-client-core</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+
     </dependencies>
     <!-- 打包插件 -->
     <build>
