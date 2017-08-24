@@ -60,6 +60,7 @@ $(function () {
             progressClose();
             result = $.parseJSON(result);
             if (result.success) {
+
                 window.location.href = basePath + '/index';
             }else{
                 // 刷新验证码

@@ -104,6 +104,15 @@
             <artifactId>hutool-all</artifactId>
             <version>3.0.6</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apereo.cas/cas-server-core-authentication -->
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-core-authentication</artifactId>
+            <version>5.2.0-RC1</version>
+        </dependency>
+
+
     </dependencies>
 
     <!-- 打包插件 -->
